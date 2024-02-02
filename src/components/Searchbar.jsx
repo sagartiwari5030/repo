@@ -4,21 +4,16 @@ import { Link } from 'react-router-dom';
 import { FiSearch } from 'react-icons/fi';
 
 const Searchbar = () => {
-  const navigate = useNavigate();
-  const [searchTerm, setSearchTerm] = useState('');
+  // const navigate = useNavigate();
+  // const [searchTerm, setSearchTerm] = useState('');
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
 
-    navigate(`/search/${searchTerm}`);
-  };
+  //   navigate(`/search/${searchTerm}`);
+  // };
   
-  const fromstyle={
   
-    '@media (max-width: 640px)': {
-      display: 'none',
-    },
-  }
   return (
 
     <>
