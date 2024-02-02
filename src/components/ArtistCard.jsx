@@ -15,6 +15,7 @@ const ArtistCard = ({ track }) => {
        {track?.name}<br></br>
         {track?.description}
       </p>
+      
     </div>
   );
 };
