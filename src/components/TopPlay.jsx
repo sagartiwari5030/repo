@@ -178,13 +178,13 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
       <label htmlFor="search-field" className="sr-only">
         Search all files
       </label>
-      <div className="flex flex-row justify-start items-center">
-        <FiSearch aria-hidden="true" className="w-5 h-5 ml-4 mt-4 mr-2" />
+      <div className="flex flex-row justify-start items-center ">
+        <FiSearch aria-hidden="true" className="w-5 h-5 ml-0 mt-4 mr-4" />
         <input
           name="search-field"
           autoComplete="off"
           id="search-field"
-          className="mt-4  w-30 md:w-80 bg-transparent border-2 rounded-full placeholder-gray-500 outline-none text-base text-white p-2 md:p-3 focus:placeholder-transparent"
+          className="mt-4 mr-8 w-30 md:w-80 bg-transparent border-2 rounded-full placeholder-gray-500 outline-none text-base text-white p-2 md:p-3 focus:placeholder-transparent"
           placeholder="Search by value"
           type="search"
           value={searchTerm}
@@ -197,7 +197,7 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     {/* Mobile sidebar */}
     <div className="absolute md:hidden block top-6 right-2  ">
         {!mobileMenuOpen ? (
-          <HiOutlineMenu className="w-7 h-8 ml-12  text-white" onClick={() => setMobileMenuOpen(true)} />
+          <HiOutlineMenu className="w-7 h-8 ml-12 mt-1  text-white" onClick={() => setMobileMenuOpen(true)} />
         ) : (
           <RiCloseLine className="w-6 h-8 mr-2 ml-12 mt-2  text-white" onClick={() => setMobileMenuOpen(false)} />
         )}
