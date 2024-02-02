@@ -1,0 +1,608 @@
+{
+    "status": "success",
+    "results": 8,
+    "data": [
+        {
+            "featured": null,
+            "_id": "64cf907d47ae38c3e33a18a2",
+            "title": "Chak De India",
+            "artist": [
+                {
+                    "_id": "64ce7c0bbbbada037c35edaa",
+                    "name": "Sukhwinder Singh",
+                    "description": "Electrifying stage presence, leaving fans in awe of their magnetic aura. A trailblazer embracing music's evolution.",
+                    "image": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/cc955507-6197-4eb1-b87c-0e9ecddb913dsize_xl_1516795350.webp",
+                    "languages": [
+                        "punjabi",
+                        "tamil",
+                        "hindi",
+                        "bengali",
+                        "telugu",
+                        "malayalam",
+                        "kannada",
+                        "english",
+                        "marathi",
+                        "gujarati"
+                    ],
+                    "songs": [
+                        "64cf907d47ae38c3e33a18a2",
+                        "64cf90a047ae38c3e33a1b74",
+                        "64cf90be47ae38c3e33a1dc4",
+                        "64cf90c747ae38c3e33a1e79",
+                        "64cf90c947ae38c3e33a1e9f",
+                        "64cf912c47ae38c3e33a269d",
+                        "64cf912c47ae38c3e33a26ac",
+                        "64cf91e047ae38c3e33a3529",
+                        "64cf91e247ae38c3e33a3546",
+                        "64cf91fe47ae38c3e33a376f",
+                        "64cf91fe47ae38c3e33a377d",
+                        "64cf91ff47ae38c3e33a378c",
+                        "64cf92b647ae38c3e33a454a",
+                        "64cf92ce47ae38c3e33a4736",
+                        "64cf943147ae38c3e33a6414",
+                        "64cf946d47ae38c3e33a68e1",
+                        "64cf947547ae38c3e33a6986",
+                        "64cf94eb47ae38c3e33a72e6"
+                    ],
+                    "appType": "music",
+                    "__v": 18
+                },
+                {
+                    "_id": "64ce7c0bbbbada037c35edab",
+                    "name": "Salim Merchant",
+                    "description": "A vocal virtuoso, effortlessly hitting dazzling high notes. A star whose presence illuminates the darkest stages.",
+                    "image": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/dbae5060-20fa-4f2f-9db6-314ed109f80bsize_xl_1558421125.webp",
+                    "languages": [
+                        "punjabi",
+                        "tamil",
+                        "urdu",
+                        "hindi",
+                        "bengali",
+                        "malayalam",
+                        "english",
+                        "marathi",
+                        "gujarati"
+                    ],
+                    "songs": [
+                        "64cf907d47ae38c3e33a18a2",
+                        "64cf907e47ae38c3e33a18ae",
+                        "64cf90be47ae38c3e33a1dc4",
+                        "64cf912c47ae38c3e33a26ac",
+                        "64cf920947ae38c3e33a3864",
+                        "64cf930e47ae38c3e33a4c7b",
+                        "64cf930f47ae38c3e33a4c8c",
+                        "64cf943147ae38c3e33a6414"
+                    ],
+                    "appType": "music",
+                    "__v": 8
+                },
+                {
+                    "_id": "64ce7c0bbbbada037c35edac",
+                    "name": "Marianne D-Cruz",
+                    "description": "A soulful crooner with a captivating voice, evoking deep emotions with each note. Enchanting audiences worldwide.",
+                    "image": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/b69d84a9-8340-4287-af4f-9c95759b47eesize_xl.jpg",
+                    "languages": [
+                        "tamil",
+                        "hindi",
+                        "english"
+                    ],
+                    "songs": [
+                        "64cf907d47ae38c3e33a18a2",
+                        "64cf90be47ae38c3e33a1dc4",
+                        "64cf912c47ae38c3e33a26ac",
+                        "64cf931247ae38c3e33a4cc5",
+                        "64cf943147ae38c3e33a6414"
+                    ],
+                    "appType": "music",
+                    "__v": 5
+                }
+            ],
+            "album": "64cee72fe41f6d0a8b0cd0a8",
+            "likedBy": [],
+            "dateOfRelease": "2007-08-01T00:00:00.000Z",
+            "type": "song",
+            "mood": "romantic",
+            "thumbnail": "https://newton-project-resume-backend.s3.amazonaws.com/thumbnail/64cf907d47ae38c3e33a18a2.jpg",
+            "appType": "music",
+            "createdAt": "2023-08-06T12:22:21.894Z",
+            "__v": 0,
+            "audio_url": "https://newton-project-resume-backend.s3.amazonaws.com/audio/64cf907d47ae38c3e33a18a2.mp3"
+        },
+        {
+            "_id": "64cf90be47ae38c3e33a1dc4",
+            "title": "Chak De India",
+            "artist": [
+                {
+                    "_id": "64ce7c0bbbbada037c35edaa",
+                    "name": "Sukhwinder Singh",
+                    "description": "Electrifying stage presence, leaving fans in awe of their magnetic aura. A trailblazer embracing music's evolution.",
+                    "image": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/cc955507-6197-4eb1-b87c-0e9ecddb913dsize_xl_1516795350.webp",
+                    "languages": [
+                        "punjabi",
+                        "tamil",
+                        "hindi",
+                        "bengali",
+                        "telugu",
+                        "malayalam",
+                        "kannada",
+                        "english",
+                        "marathi",
+                        "gujarati"
+                    ],
+                    "songs": [
+                        "64cf907d47ae38c3e33a18a2",
+                        "64cf90a047ae38c3e33a1b74",
+                        "64cf90be47ae38c3e33a1dc4",
+                        "64cf90c747ae38c3e33a1e79",
+                        "64cf90c947ae38c3e33a1e9f",
+                        "64cf912c47ae38c3e33a269d",
+                        "64cf912c47ae38c3e33a26ac",
+                        "64cf91e047ae38c3e33a3529",
+                        "64cf91e247ae38c3e33a3546",
+                        "64cf91fe47ae38c3e33a376f",
+                        "64cf91fe47ae38c3e33a377d",
+                        "64cf91ff47ae38c3e33a378c",
+                        "64cf92b647ae38c3e33a454a",
+                        "64cf92ce47ae38c3e33a4736",
+                        "64cf943147ae38c3e33a6414",
+                        "64cf946d47ae38c3e33a68e1",
+                        "64cf947547ae38c3e33a6986",
+                        "64cf94eb47ae38c3e33a72e6"
+                    ],
+                    "appType": "music",
+                    "__v": 18
+                },
+                {
+                    "_id": "64ce7c0bbbbada037c35edab",
+                    "name": "Salim Merchant",
+                    "description": "A vocal virtuoso, effortlessly hitting dazzling high notes. A star whose presence illuminates the darkest stages.",
+                    "image": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/dbae5060-20fa-4f2f-9db6-314ed109f80bsize_xl_1558421125.webp",
+                    "languages": [
+                        "punjabi",
+                        "tamil",
+                        "urdu",
+                        "hindi",
+                        "bengali",
+                        "malayalam",
+                        "english",
+                        "marathi",
+                        "gujarati"
+                    ],
+                    "songs": [
+                        "64cf907d47ae38c3e33a18a2",
+                        "64cf907e47ae38c3e33a18ae",
+                        "64cf90be47ae38c3e33a1dc4",
+                        "64cf912c47ae38c3e33a26ac",
+                        "64cf920947ae38c3e33a3864",
+                        "64cf930e47ae38c3e33a4c7b",
+                        "64cf930f47ae38c3e33a4c8c",
+                        "64cf943147ae38c3e33a6414"
+                    ],
+                    "appType": "music",
+                    "__v": 8
+                },
+                {
+                    "_id": "64ce7c0bbbbada037c35edac",
+                    "name": "Marianne D-Cruz",
+                    "description": "A soulful crooner with a captivating voice, evoking deep emotions with each note. Enchanting audiences worldwide.",
+                    "image": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/b69d84a9-8340-4287-af4f-9c95759b47eesize_xl.jpg",
+                    "languages": [
+                        "tamil",
+                        "hindi",
+                        "english"
+                    ],
+                    "songs": [
+                        "64cf907d47ae38c3e33a18a2",
+                        "64cf90be47ae38c3e33a1dc4",
+                        "64cf912c47ae38c3e33a26ac",
+                        "64cf931247ae38c3e33a4cc5",
+                        "64cf943147ae38c3e33a6414"
+                    ],
+                    "appType": "music",
+                    "__v": 5
+                }
+            ],
+            "album": "64cee72fe41f6d0a8b0cd0bc",
+            "likedBy": [],
+            "dateOfRelease": "2017-07-25T00:00:00.000Z",
+            "type": "song",
+            "mood": "happy",
+            "thumbnail": "https://newton-project-resume-backend.s3.amazonaws.com/thumbnail/64cf90be47ae38c3e33a1dc4.jpg",
+            "appType": "music",
+            "createdAt": "2023-08-06T12:23:26.638Z",
+            "__v": 0,
+            "audio_url": "https://newton-project-resume-backend.s3.amazonaws.com/audio/64cf90be47ae38c3e33a1dc4.mp3",
+            "featured": "Top 50 of this month"
+        },
+        {
+            "featured": null,
+            "_id": "64cf912c47ae38c3e33a26ac",
+            "title": "Chak De India",
+            "artist": [
+                {
+                    "_id": "64ce7c0bbbbada037c35edaa",
+                    "name": "Sukhwinder Singh",
+                    "description": "Electrifying stage presence, leaving fans in awe of their magnetic aura. A trailblazer embracing music's evolution.",
+                    "image": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/cc955507-6197-4eb1-b87c-0e9ecddb913dsize_xl_1516795350.webp",
+                    "languages": [
+                        "punjabi",
+                        "tamil",
+                        "hindi",
+                        "bengali",
+                        "telugu",
+                        "malayalam",
+                        "kannada",
+                        "english",
+                        "marathi",
+                        "gujarati"
+                    ],
+                    "songs": [
+                        "64cf907d47ae38c3e33a18a2",
+                        "64cf90a047ae38c3e33a1b74",
+                        "64cf90be47ae38c3e33a1dc4",
+                        "64cf90c747ae38c3e33a1e79",
+                        "64cf90c947ae38c3e33a1e9f",
+                        "64cf912c47ae38c3e33a269d",
+                        "64cf912c47ae38c3e33a26ac",
+                        "64cf91e047ae38c3e33a3529",
+                        "64cf91e247ae38c3e33a3546",
+                        "64cf91fe47ae38c3e33a376f",
+                        "64cf91fe47ae38c3e33a377d",
+                        "64cf91ff47ae38c3e33a378c",
+                        "64cf92b647ae38c3e33a454a",
+                        "64cf92ce47ae38c3e33a4736",
+                        "64cf943147ae38c3e33a6414",
+                        "64cf946d47ae38c3e33a68e1",
+                        "64cf947547ae38c3e33a6986",
+                        "64cf94eb47ae38c3e33a72e6"
+                    ],
+                    "appType": "music",
+                    "__v": 18
+                },
+                {
+                    "_id": "64ce7c0bbbbada037c35edab",
+                    "name": "Salim Merchant",
+                    "description": "A vocal virtuoso, effortlessly hitting dazzling high notes. A star whose presence illuminates the darkest stages.",
+                    "image": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/dbae5060-20fa-4f2f-9db6-314ed109f80bsize_xl_1558421125.webp",
+                    "languages": [
+                        "punjabi",
+                        "tamil",
+                        "urdu",
+                        "hindi",
+                        "bengali",
+                        "malayalam",
+                        "english",
+                        "marathi",
+                        "gujarati"
+                    ],
+                    "songs": [
+                        "64cf907d47ae38c3e33a18a2",
+                        "64cf907e47ae38c3e33a18ae",
+                        "64cf90be47ae38c3e33a1dc4",
+                        "64cf912c47ae38c3e33a26ac",
+                        "64cf920947ae38c3e33a3864",
+                        "64cf930e47ae38c3e33a4c7b",
+                        "64cf930f47ae38c3e33a4c8c",
+                        "64cf943147ae38c3e33a6414"
+                    ],
+                    "appType": "music",
+                    "__v": 8
+                },
+                {
+                    "_id": "64ce7c0bbbbada037c35edac",
+                    "name": "Marianne D-Cruz",
+                    "description": "A soulful crooner with a captivating voice, evoking deep emotions with each note. Enchanting audiences worldwide.",
+                    "image": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/b69d84a9-8340-4287-af4f-9c95759b47eesize_xl.jpg",
+                    "languages": [
+                        "tamil",
+                        "hindi",
+                        "english"
+                    ],
+                    "songs": [
+                        "64cf907d47ae38c3e33a18a2",
+                        "64cf90be47ae38c3e33a1dc4",
+                        "64cf912c47ae38c3e33a26ac",
+                        "64cf931247ae38c3e33a4cc5",
+                        "64cf943147ae38c3e33a6414"
+                    ],
+                    "appType": "music",
+                    "__v": 5
+                }
+            ],
+            "album": "64cee72fe41f6d0a8b0cd0ef",
+            "likedBy": [],
+            "dateOfRelease": "2016-08-04T00:00:00.000Z",
+            "type": "song",
+            "mood": "romantic",
+            "thumbnail": "https://newton-project-resume-backend.s3.amazonaws.com/thumbnail/64cf912c47ae38c3e33a26ac.jpg",
+            "appType": "music",
+            "createdAt": "2023-08-06T12:25:16.935Z",
+            "__v": 0,
+            "audio_url": "https://newton-project-resume-backend.s3.amazonaws.com/audio/64cf912c47ae38c3e33a26ac.mp3"
+        },
+        {
+            "featured": null,
+            "_id": "64cf920547ae38c3e33a3802",
+            "title": "Chak Glass",
+            "artist": [
+                {
+                    "_id": "64ce7c0bbbbada037c35ef65",
+                    "name": "Imran Khan",
+                    "description": "Electrifying stage presence, leaving fans in awe of their magnetic aura. A trailblazer embracing music's evolution.",
+                    "image": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/5e372520-2024-4450-82f4-6d8dc22830c6size_xl_1643780390.webp",
+                    "languages": [
+                        "punjabi",
+                        "english"
+                    ],
+                    "songs": [
+                        "64cf920347ae38c3e33a37e6",
+                        "64cf920447ae38c3e33a37ed",
+                        "64cf920447ae38c3e33a37f4",
+                        "64cf920447ae38c3e33a37fb",
+                        "64cf920547ae38c3e33a3802",
+                        "64cf920547ae38c3e33a3809",
+                        "64cf920547ae38c3e33a3810",
+                        "64cf920647ae38c3e33a3818",
+                        "64cf920647ae38c3e33a3821",
+                        "64cf920747ae38c3e33a3829",
+                        "64cf920747ae38c3e33a3832",
+                        "64cf920747ae38c3e33a3839",
+                        "64cf920847ae38c3e33a3840",
+                        "64cf920847ae38c3e33a3847",
+                        "64cf920847ae38c3e33a384e"
+                    ],
+                    "appType": "music",
+                    "__v": 15
+                }
+            ],
+            "album": "64cee72fe41f6d0a8b0cd14e",
+            "likedBy": [],
+            "dateOfRelease": "2009-07-27T00:00:00.000Z",
+            "type": "song",
+            "mood": "romantic",
+            "thumbnail": "https://newton-project-resume-backend.s3.amazonaws.com/thumbnail/64cf920547ae38c3e33a3802.jpg",
+            "appType": "music",
+            "createdAt": "2023-08-06T12:28:53.261Z",
+            "__v": 0,
+            "audio_url": "https://newton-project-resume-backend.s3.amazonaws.com/audio/64cf920547ae38c3e33a3802.mp3"
+        },
+        {
+            "featured": null,
+            "_id": "64cf943147ae38c3e33a6414",
+            "title": "Chak De India",
+            "artist": [
+                {
+                    "_id": "64ce7c0bbbbada037c35edaa",
+                    "name": "Sukhwinder Singh",
+                    "description": "Electrifying stage presence, leaving fans in awe of their magnetic aura. A trailblazer embracing music's evolution.",
+                    "image": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/cc955507-6197-4eb1-b87c-0e9ecddb913dsize_xl_1516795350.webp",
+                    "languages": [
+                        "punjabi",
+                        "tamil",
+                        "hindi",
+                        "bengali",
+                        "telugu",
+                        "malayalam",
+                        "kannada",
+                        "english",
+                        "marathi",
+                        "gujarati"
+                    ],
+                    "songs": [
+                        "64cf907d47ae38c3e33a18a2",
+                        "64cf90a047ae38c3e33a1b74",
+                        "64cf90be47ae38c3e33a1dc4",
+                        "64cf90c747ae38c3e33a1e79",
+                        "64cf90c947ae38c3e33a1e9f",
+                        "64cf912c47ae38c3e33a269d",
+                        "64cf912c47ae38c3e33a26ac",
+                        "64cf91e047ae38c3e33a3529",
+                        "64cf91e247ae38c3e33a3546",
+                        "64cf91fe47ae38c3e33a376f",
+                        "64cf91fe47ae38c3e33a377d",
+                        "64cf91ff47ae38c3e33a378c",
+                        "64cf92b647ae38c3e33a454a",
+                        "64cf92ce47ae38c3e33a4736",
+                        "64cf943147ae38c3e33a6414",
+                        "64cf946d47ae38c3e33a68e1",
+                        "64cf947547ae38c3e33a6986",
+                        "64cf94eb47ae38c3e33a72e6"
+                    ],
+                    "appType": "music",
+                    "__v": 18
+                },
+                {
+                    "_id": "64ce7c0bbbbada037c35edab",
+                    "name": "Salim Merchant",
+                    "description": "A vocal virtuoso, effortlessly hitting dazzling high notes. A star whose presence illuminates the darkest stages.",
+                    "image": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/dbae5060-20fa-4f2f-9db6-314ed109f80bsize_xl_1558421125.webp",
+                    "languages": [
+                        "punjabi",
+                        "tamil",
+                        "urdu",
+                        "hindi",
+                        "bengali",
+                        "malayalam",
+                        "english",
+                        "marathi",
+                        "gujarati"
+                    ],
+                    "songs": [
+                        "64cf907d47ae38c3e33a18a2",
+                        "64cf907e47ae38c3e33a18ae",
+                        "64cf90be47ae38c3e33a1dc4",
+                        "64cf912c47ae38c3e33a26ac",
+                        "64cf920947ae38c3e33a3864",
+                        "64cf930e47ae38c3e33a4c7b",
+                        "64cf930f47ae38c3e33a4c8c",
+                        "64cf943147ae38c3e33a6414"
+                    ],
+                    "appType": "music",
+                    "__v": 8
+                },
+                {
+                    "_id": "64ce7c0bbbbada037c35edac",
+                    "name": "Marianne D-Cruz",
+                    "description": "A soulful crooner with a captivating voice, evoking deep emotions with each note. Enchanting audiences worldwide.",
+                    "image": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/b69d84a9-8340-4287-af4f-9c95759b47eesize_xl.jpg",
+                    "languages": [
+                        "tamil",
+                        "hindi",
+                        "english"
+                    ],
+                    "songs": [
+                        "64cf907d47ae38c3e33a18a2",
+                        "64cf90be47ae38c3e33a1dc4",
+                        "64cf912c47ae38c3e33a26ac",
+                        "64cf931247ae38c3e33a4cc5",
+                        "64cf943147ae38c3e33a6414"
+                    ],
+                    "appType": "music",
+                    "__v": 5
+                }
+            ],
+            "album": "64cee72fe41f6d0a8b0cd20b",
+            "likedBy": [],
+            "dateOfRelease": "2013-08-08T00:00:00.000Z",
+            "type": "song",
+            "mood": "happy",
+            "thumbnail": "https://newton-project-resume-backend.s3.amazonaws.com/thumbnail/64cf943147ae38c3e33a6414.jpg",
+            "appType": "music",
+            "createdAt": "2023-08-06T12:38:09.204Z",
+            "__v": 0,
+            "audio_url": "https://newton-project-resume-backend.s3.amazonaws.com/audio/64cf943147ae38c3e33a6414.mp3"
+        },
+        {
+            "featured": null,
+            "_id": "64cf946047ae38c3e33a67d7",
+            "title": "Chakna Chakna",
+            "artist": [
+                {
+                    "_id": "64ce7c0bbbbada037c35ee37",
+                    "name": "Himesh Reshammiya",
+                    "description": "Electrifying pop sensation, connecting with a wide audience. A talented force shaping the music industry.",
+                    "image": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/cf814de9-a520-4c62-adec-3bb7cbdfab80size_xl_1620205319.webp",
+                    "languages": [
+                        "tamil",
+                        "hindi",
+                        "bengali",
+                        "telugu",
+                        "english"
+                    ],
+                    "songs": [
+                        "64cf90d247ae38c3e33a1f52",
+                        "64cf92d047ae38c3e33a475e",
+                        "64cf92d147ae38c3e33a477b",
+                        "64cf946047ae38c3e33a67d7",
+                        "64cf946047ae38c3e33a67de",
+                        "64cf946147ae38c3e33a67f0",
+                        "64cf946347ae38c3e33a6814",
+                        "64cf946447ae38c3e33a6825",
+                        "64cf946547ae38c3e33a6841",
+                        "64cf946647ae38c3e33a685f",
+                        "64cf946747ae38c3e33a6868"
+                    ],
+                    "appType": "music",
+                    "__v": 11
+                }
+            ],
+            "album": "64cee72fe41f6d0a8b0cd21a",
+            "likedBy": [],
+            "dateOfRelease": "2007-02-23T00:00:00.000Z",
+            "type": "song",
+            "mood": "happy",
+            "thumbnail": "https://newton-project-resume-backend.s3.amazonaws.com/thumbnail/64cf946047ae38c3e33a67d7.jpg",
+            "appType": "music",
+            "createdAt": "2023-08-06T12:38:56.297Z",
+            "__v": 0,
+            "audio_url": "https://newton-project-resume-backend.s3.amazonaws.com/audio/64cf946047ae38c3e33a67d7.mp3"
+        },
+        {
+            "featured": null,
+            "_id": "64cf946447ae38c3e33a6825",
+            "title": "Chakna Chakna",
+            "artist": [
+                {
+                    "_id": "64ce7c0bbbbada037c35ee37",
+                    "name": "Himesh Reshammiya",
+                    "description": "Electrifying pop sensation, connecting with a wide audience. A talented force shaping the music industry.",
+                    "image": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/cf814de9-a520-4c62-adec-3bb7cbdfab80size_xl_1620205319.webp",
+                    "languages": [
+                        "tamil",
+                        "hindi",
+                        "bengali",
+                        "telugu",
+                        "english"
+                    ],
+                    "songs": [
+                        "64cf90d247ae38c3e33a1f52",
+                        "64cf92d047ae38c3e33a475e",
+                        "64cf92d147ae38c3e33a477b",
+                        "64cf946047ae38c3e33a67d7",
+                        "64cf946047ae38c3e33a67de",
+                        "64cf946147ae38c3e33a67f0",
+                        "64cf946347ae38c3e33a6814",
+                        "64cf946447ae38c3e33a6825",
+                        "64cf946547ae38c3e33a6841",
+                        "64cf946647ae38c3e33a685f",
+                        "64cf946747ae38c3e33a6868"
+                    ],
+                    "appType": "music",
+                    "__v": 11
+                }
+            ],
+            "album": "64cee72fe41f6d0a8b0cd21a",
+            "likedBy": [],
+            "dateOfRelease": "2007-02-23T00:00:00.000Z",
+            "type": "song",
+            "mood": "excited",
+            "thumbnail": "https://newton-project-resume-backend.s3.amazonaws.com/thumbnail/64cf946447ae38c3e33a6825.jpg",
+            "appType": "music",
+            "createdAt": "2023-08-06T12:39:00.016Z",
+            "__v": 0,
+            "audio_url": "https://newton-project-resume-backend.s3.amazonaws.com/audio/64cf946447ae38c3e33a6825.mp3"
+        },
+        {
+            "featured": null,
+            "_id": "64cf94e247ae38c3e33a722f",
+            "title": "Story-4 S3 Panchak",
+            "artist": [
+                {
+                    "_id": "64ce7c0bbbbada037c35f13b",
+                    "name": "Ashish Vidyarthi",
+                    "description": "Powerhouse vocalist, commanding the stage with raw energy. A transformative artist pushing the boundaries of sound.",
+                    "image": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/6032239a-77d0-46b3-8b02-fe2db6db3f3bsize_xl_1594912604.webp",
+                    "languages": [
+                        "tamil",
+                        "hindi",
+                        "english"
+                    ],
+                    "songs": [
+                        "64cf94e147ae38c3e33a721d",
+                        "64cf94e147ae38c3e33a7223",
+                        "64cf94e247ae38c3e33a7229",
+                        "64cf94e247ae38c3e33a722f",
+                        "64cf94e247ae38c3e33a7235",
+                        "64cf94e347ae38c3e33a723b",
+                        "64cf94e347ae38c3e33a7241",
+                        "64cf94e347ae38c3e33a7247",
+                        "64cf94e447ae38c3e33a724d",
+                        "64cf94e447ae38c3e33a7253",
+                        "64cf94e447ae38c3e33a7259",
+                        "64cf94e447ae38c3e33a725f"
+                    ],
+                    "appType": "music",
+                    "__v": 12
+                }
+            ],
+            "likedBy": [],
+            "type": "song",
+            "mood": "sad",
+            "thumbnail": "https://newton-project-resume-backend.s3.amazonaws.com/thumbnail/64cf94e247ae38c3e33a722f.jpg",
+            "appType": "music",
+            "createdAt": "2023-08-06T12:41:06.486Z",
+            "__v": 0,
+            "audio_url": "https://newton-project-resume-backend.s3.amazonaws.com/audio/64cf94e247ae38c3e33a722f.mp3"
+        }
+    ]
+}

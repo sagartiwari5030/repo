@@ -1,0 +1,391 @@
+{
+    "status": "success",
+    "data": {
+        "_id": "64ce7c0bbbbada037c35eda9",
+        "name": "DIVINE",
+        "description": "Emotive storyteller, infusing lyrics with heartfelt meaning. Using music to inspire positive change, a beacon of hope.",
+        "image": "https://newton-project-resume-backend.s3.ap-south-1.amazonaws.com/148de808-8598-4066-8fe0-972e78d834d8size_xl_1663590345.webp",
+        "languages": [
+            "punjabi",
+            "tamil",
+            "hindi",
+            "bengali",
+            "telugu",
+            "malayalam",
+            "english",
+            "marathi",
+            "bhojpuri",
+            "gujarati"
+        ],
+        "songs": [
+            {
+                "_id": "64cf907d47ae38c3e33a189a",
+                "title": "Kohinoor",
+                "artist": [
+                    "64ce7c0bbbbada037c35eda9"
+                ],
+                "likedBy": [],
+                "type": "song",
+                "mood": "happy",
+                "thumbnail": "https://newton-project-resume-backend.s3.amazonaws.com/thumbnail/64cf907d47ae38c3e33a189a.jpg",
+                "appType": "music",
+                "createdAt": "2023-08-06T12:22:21.474Z",
+                "__v": 0,
+                "audio_url": "https://newton-project-resume-backend.s3.amazonaws.com/audio/64cf907d47ae38c3e33a189a.mp3",
+                "featured": "Trending songs"
+            },
+            {
+                "_id": "64cf909147ae38c3e33a1a3a",
+                "title": "Moosedrilla (feat. DIVINE)",
+                "artist": [
+                    "64ce7c0bbbbada037c35ede0",
+                    "64ce7c0bbbbada037c35eda9"
+                ],
+                "album": "64cee72fe41f6d0a8b0cd0af",
+                "likedBy": [],
+                "dateOfRelease": "2021-05-15T00:00:00.000Z",
+                "type": "song",
+                "mood": "sad",
+                "thumbnail": "https://newton-project-resume-backend.s3.amazonaws.com/thumbnail/64cf909147ae38c3e33a1a3a.jpg",
+                "appType": "music",
+                "createdAt": "2023-08-06T12:22:41.877Z",
+                "__v": 0,
+                "audio_url": "https://newton-project-resume-backend.s3.amazonaws.com/audio/64cf909147ae38c3e33a1a3a.mp3",
+                "featured": "Trending songs"
+            },
+            {
+                "featured": null,
+                "_id": "64cf909e47ae38c3e33a1b4b",
+                "title": "Chorni",
+                "artist": [
+                    "64ce7c0bbbbada037c35eda9",
+                    "64ce7c0bbbbada037c35ede0"
+                ],
+                "album": "64cee72fe41f6d0a8b0cd0b2",
+                "likedBy": [],
+                "dateOfRelease": "2023-07-07T00:00:00.000Z",
+                "type": "song",
+                "mood": "sad",
+                "thumbnail": "https://newton-project-resume-backend.s3.amazonaws.com/thumbnail/64cf909e47ae38c3e33a1b4b.jpg",
+                "appType": "music",
+                "createdAt": "2023-08-06T12:22:54.834Z",
+                "__v": 0,
+                "audio_url": "https://newton-project-resume-backend.s3.amazonaws.com/audio/64cf909e47ae38c3e33a1b4b.mp3"
+            },
+            {
+                "featured": null,
+                "_id": "64cf920b47ae38c3e33a3889",
+                "title": "Bas Kya Ba",
+                "artist": [
+                    "64ce7c0bbbbada037c35ef68",
+                    "64ce7c0bbbbada037c35eda9"
+                ],
+                "likedBy": [],
+                "type": "song",
+                "mood": "excited",
+                "thumbnail": "https://newton-project-resume-backend.s3.amazonaws.com/thumbnail/64cf920b47ae38c3e33a3889.jpg",
+                "appType": "music",
+                "createdAt": "2023-08-06T12:28:59.724Z",
+                "__v": 0,
+                "audio_url": "https://newton-project-resume-backend.s3.amazonaws.com/audio/64cf920b47ae38c3e33a3889.mp3"
+            },
+            {
+                "featured": null,
+                "_id": "64cf949647ae38c3e33a6c29",
+                "title": "Monsta Mashup 2019 by DJ Notorious and Lijo George",
+                "artist": [
+                    "64ce7c0bbbbada037c35f10f",
+                    "64ce7c0bbbbada037c35efd6",
+                    "64ce7c0bbbbada037c35f110",
+                    "64ce7c0bbbbada037c35eda9",
+                    "64ce7c0bbbbada037c35effc",
+                    "64ce7c0bbbbada037c35edc1",
+                    "64ce7c0bbbbada037c35f03c",
+                    "64ce7c0bbbbada037c35ef1b",
+                    "64ce7c0bbbbada037c35edf7",
+                    "64ce7c0bbbbada037c35edd2",
+                    "64ce7c0bbbbada037c35f111",
+                    "64ce7c0bbbbada037c35f112",
+                    "64ce7c0bbbbada037c35f0df",
+                    "64ce7c0bbbbada037c35ef31",
+                    "64ce7c0bbbbada037c35f113",
+                    "64ce7c0bbbbada037c35ee00",
+                    "64ce7c0bbbbada037c35f114",
+                    "64ce7c0bbbbada037c35ee23",
+                    "64ce7c0bbbbada037c35f115",
+                    "64ce7c0bbbbada037c35f116",
+                    "64ce7c0bbbbada037c35f117",
+                    "64ce7c0bbbbada037c35eeb5",
+                    "64ce7c0bbbbada037c35ee44",
+                    "64ce7c0bbbbada037c35ef93",
+                    "64ce7c0bbbbada037c35edc3",
+                    "64ce7c0bbbbada037c35eec7",
+                    "64ce7c0bbbbada037c35ef19",
+                    "64ce7c0bbbbada037c35ee58",
+                    "64ce7c0bbbbada037c35f118",
+                    "64ce7c0bbbbada037c35edd8",
+                    "64ce7c0bbbbada037c35eeb1",
+                    "64ce7c0bbbbada037c35f119",
+                    "64ce7c0bbbbada037c35f11a",
+                    "64ce7c0bbbbada037c35ee63",
+                    "64ce7c0bbbbada037c35edd6",
+                    "64ce7c0bbbbada037c35edd5",
+                    "64ce7c0bbbbada037c35ee3d",
+                    "64ce7c0bbbbada037c35ee3a",
+                    "64ce7c0bbbbada037c35efc0",
+                    "64ce7c0bbbbada037c35f11b",
+                    "64ce7c0bbbbada037c35edbb",
+                    "64ce7c0bbbbada037c35ef01",
+                    "64ce7c0bbbbada037c35eed7",
+                    "64ce7c0bbbbada037c35f11c",
+                    "64ce7c0bbbbada037c35ee73",
+                    "64ce7c0bbbbada037c35eea0",
+                    "64ce7c0bbbbada037c35ee36",
+                    "64ce7c0bbbbada037c35efc6",
+                    "64ce7c0bbbbada037c35ee93",
+                    "64ce7c0bbbbada037c35ee18",
+                    "64ce7c0bbbbada037c35eff1",
+                    "64ce7c0bbbbada037c35f11d",
+                    "64ce7c0bbbbada037c35ede3",
+                    "64ce7c0bbbbada037c35f11e",
+                    "64ce7c0bbbbada037c35eead",
+                    "64ce7c0bbbbada037c35f11f"
+                ],
+                "album": "64cee72fe41f6d0a8b0cd225",
+                "likedBy": [],
+                "dateOfRelease": "2019-12-30T00:00:00.000Z",
+                "type": "song",
+                "mood": "romantic",
+                "thumbnail": "https://newton-project-resume-backend.s3.amazonaws.com/thumbnail/64cf949647ae38c3e33a6c29.jpg",
+                "appType": "music",
+                "createdAt": "2023-08-06T12:39:50.624Z",
+                "__v": 0,
+                "audio_url": "https://newton-project-resume-backend.s3.amazonaws.com/audio/64cf949647ae38c3e33a6c29.mp3"
+            },
+            {
+                "featured": null,
+                "_id": "64cf94cf47ae38c3e33a70a6",
+                "title": "Gunehgar",
+                "artist": [
+                    "64ce7c0bbbbada037c35eda9"
+                ],
+                "album": "64cee72fe41f6d0a8b0cd22e",
+                "likedBy": [],
+                "dateOfRelease": "2022-11-10T00:00:00.000Z",
+                "type": "song",
+                "mood": "excited",
+                "thumbnail": "https://newton-project-resume-backend.s3.amazonaws.com/thumbnail/64cf94cf47ae38c3e33a70a6.jpg",
+                "appType": "music",
+                "createdAt": "2023-08-06T12:40:47.438Z",
+                "__v": 0,
+                "audio_url": "https://newton-project-resume-backend.s3.amazonaws.com/audio/64cf94cf47ae38c3e33a70a6.mp3"
+            },
+            {
+                "featured": null,
+                "_id": "64cf94cf47ae38c3e33a70ae",
+                "title": "Baazigar",
+                "artist": [
+                    "64ce7c0bbbbada037c35eda9",
+                    "64ce7c0bbbbada037c35f131"
+                ],
+                "album": "64cee72fe41f6d0a8b0cd22e",
+                "likedBy": [],
+                "dateOfRelease": "2022-11-10T00:00:00.000Z",
+                "type": "song",
+                "mood": "sad",
+                "thumbnail": "https://newton-project-resume-backend.s3.amazonaws.com/thumbnail/64cf94cf47ae38c3e33a70ae.jpg",
+                "appType": "music",
+                "createdAt": "2023-08-06T12:40:47.811Z",
+                "__v": 0,
+                "audio_url": "https://newton-project-resume-backend.s3.amazonaws.com/audio/64cf94cf47ae38c3e33a70ae.mp3"
+            },
+            {
+                "featured": null,
+                "_id": "64cf94d047ae38c3e33a70b8",
+                "title": "Traffic Jam",
+                "artist": [
+                    "64ce7c0bbbbada037c35eda9",
+                    "64ce7c0bbbbada037c35f132"
+                ],
+                "album": "64cee72fe41f6d0a8b0cd22e",
+                "likedBy": [],
+                "dateOfRelease": "2022-11-10T00:00:00.000Z",
+                "type": "song",
+                "mood": "romantic",
+                "thumbnail": "https://newton-project-resume-backend.s3.amazonaws.com/thumbnail/64cf94d047ae38c3e33a70b8.jpg",
+                "appType": "music",
+                "createdAt": "2023-08-06T12:40:48.293Z",
+                "__v": 0,
+                "audio_url": "https://newton-project-resume-backend.s3.amazonaws.com/audio/64cf94d047ae38c3e33a70b8.mp3"
+            },
+            {
+                "featured": null,
+                "_id": "64cf94d047ae38c3e33a70c2",
+                "title": "Sitara",
+                "artist": [
+                    "64ce7c0bbbbada037c35eda9",
+                    "64ce7c0bbbbada037c35eec7"
+                ],
+                "album": "64cee72fe41f6d0a8b0cd22e",
+                "likedBy": [],
+                "dateOfRelease": "2022-11-10T00:00:00.000Z",
+                "type": "song",
+                "mood": "romantic",
+                "thumbnail": "https://newton-project-resume-backend.s3.amazonaws.com/thumbnail/64cf94d047ae38c3e33a70c2.jpg",
+                "appType": "music",
+                "createdAt": "2023-08-06T12:40:48.795Z",
+                "__v": 0,
+                "audio_url": "https://newton-project-resume-backend.s3.amazonaws.com/audio/64cf94d047ae38c3e33a70c2.mp3"
+            },
+            {
+                "featured": null,
+                "_id": "64cf94d147ae38c3e33a70cc",
+                "title": "Bornfire",
+                "artist": [
+                    "64ce7c0bbbbada037c35eda9",
+                    "64ce7c0bbbbada037c35f133"
+                ],
+                "album": "64cee72fe41f6d0a8b0cd22e",
+                "likedBy": [],
+                "dateOfRelease": "2022-11-10T00:00:00.000Z",
+                "type": "song",
+                "mood": "happy",
+                "thumbnail": "https://newton-project-resume-backend.s3.amazonaws.com/thumbnail/64cf94d147ae38c3e33a70cc.jpg",
+                "appType": "music",
+                "createdAt": "2023-08-06T12:40:49.277Z",
+                "__v": 0,
+                "audio_url": "https://newton-project-resume-backend.s3.amazonaws.com/audio/64cf94d147ae38c3e33a70cc.mp3"
+            },
+            {
+                "featured": null,
+                "_id": "64cf94d147ae38c3e33a70d5",
+                "title": "Plush",
+                "artist": [
+                    "64ce7c0bbbbada037c35eda9"
+                ],
+                "album": "64cee72fe41f6d0a8b0cd22e",
+                "likedBy": [],
+                "dateOfRelease": "2022-11-10T00:00:00.000Z",
+                "type": "song",
+                "mood": "happy",
+                "thumbnail": "https://newton-project-resume-backend.s3.amazonaws.com/thumbnail/64cf94d147ae38c3e33a70d5.jpg",
+                "appType": "music",
+                "createdAt": "2023-08-06T12:40:49.977Z",
+                "__v": 0,
+                "audio_url": "https://newton-project-resume-backend.s3.amazonaws.com/audio/64cf94d147ae38c3e33a70d5.mp3"
+            },
+            {
+                "featured": null,
+                "_id": "64cf94d247ae38c3e33a70dc",
+                "title": "Bhookh",
+                "artist": [
+                    "64ce7c0bbbbada037c35eda9"
+                ],
+                "album": "64cee72fe41f6d0a8b0cd22e",
+                "likedBy": [],
+                "dateOfRelease": "2022-11-10T00:00:00.000Z",
+                "type": "song",
+                "mood": "romantic",
+                "thumbnail": "https://newton-project-resume-backend.s3.amazonaws.com/thumbnail/64cf94d247ae38c3e33a70dc.jpg",
+                "appType": "music",
+                "createdAt": "2023-08-06T12:40:50.300Z",
+                "__v": 0,
+                "audio_url": "https://newton-project-resume-backend.s3.amazonaws.com/audio/64cf94d247ae38c3e33a70dc.mp3"
+            },
+            {
+                "featured": null,
+                "_id": "64cf94d247ae38c3e33a70e4",
+                "title": "Street Lori",
+                "artist": [
+                    "64ce7c0bbbbada037c35eda9",
+                    "64ce7c0bbbbada037c35eebb"
+                ],
+                "album": "64cee72fe41f6d0a8b0cd22e",
+                "likedBy": [],
+                "dateOfRelease": "2022-11-10T00:00:00.000Z",
+                "type": "song",
+                "mood": "romantic",
+                "thumbnail": "https://newton-project-resume-backend.s3.amazonaws.com/thumbnail/64cf94d247ae38c3e33a70e4.jpg",
+                "appType": "music",
+                "createdAt": "2023-08-06T12:40:50.673Z",
+                "__v": 0,
+                "audio_url": "https://newton-project-resume-backend.s3.amazonaws.com/audio/64cf94d247ae38c3e33a70e4.mp3"
+            },
+            {
+                "featured": null,
+                "_id": "64cf94d347ae38c3e33a70ed",
+                "title": "Hitman",
+                "artist": [
+                    "64ce7c0bbbbada037c35eda9"
+                ],
+                "album": "64cee72fe41f6d0a8b0cd22e",
+                "likedBy": [],
+                "dateOfRelease": "2022-11-10T00:00:00.000Z",
+                "type": "song",
+                "mood": "romantic",
+                "thumbnail": "https://newton-project-resume-backend.s3.amazonaws.com/thumbnail/64cf94d347ae38c3e33a70ed.jpg",
+                "appType": "music",
+                "createdAt": "2023-08-06T12:40:51.103Z",
+                "__v": 0,
+                "audio_url": "https://newton-project-resume-backend.s3.amazonaws.com/audio/64cf94d347ae38c3e33a70ed.mp3"
+            },
+            {
+                "_id": "64cf94d347ae38c3e33a70f4",
+                "title": "Akela",
+                "artist": [
+                    "64ce7c0bbbbada037c35eda9"
+                ],
+                "album": "64cee72fe41f6d0a8b0cd22e",
+                "likedBy": [],
+                "dateOfRelease": "2022-11-10T00:00:00.000Z",
+                "type": "song",
+                "mood": "excited",
+                "thumbnail": "https://newton-project-resume-backend.s3.amazonaws.com/thumbnail/64cf94d347ae38c3e33a70f4.jpg",
+                "appType": "music",
+                "createdAt": "2023-08-06T12:40:51.426Z",
+                "__v": 0,
+                "audio_url": "https://newton-project-resume-backend.s3.amazonaws.com/audio/64cf94d347ae38c3e33a70f4.mp3",
+                "featured": "Top 50 of this month"
+            },
+            {
+                "featured": null,
+                "_id": "64cf94d347ae38c3e33a70fb",
+                "title": "Flex Kar",
+                "artist": [
+                    "64ce7c0bbbbada037c35eda9"
+                ],
+                "album": "64cee72fe41f6d0a8b0cd22e",
+                "likedBy": [],
+                "dateOfRelease": "2022-11-10T00:00:00.000Z",
+                "type": "song",
+                "mood": "happy",
+                "thumbnail": "https://newton-project-resume-backend.s3.amazonaws.com/thumbnail/64cf94d347ae38c3e33a70fb.jpg",
+                "appType": "music",
+                "createdAt": "2023-08-06T12:40:51.749Z",
+                "__v": 0,
+                "audio_url": "https://newton-project-resume-backend.s3.amazonaws.com/audio/64cf94d347ae38c3e33a70fb.mp3"
+            },
+            {
+                "featured": null,
+                "_id": "64cf94d447ae38c3e33a7103",
+                "title": "Blessings",
+                "artist": [
+                    "64ce7c0bbbbada037c35eda9",
+                    "64ce7c0bbbbada037c35f134"
+                ],
+                "album": "64cee72fe41f6d0a8b0cd22e",
+                "likedBy": [],
+                "dateOfRelease": "2022-11-10T00:00:00.000Z",
+                "type": "song",
+                "mood": "excited",
+                "thumbnail": "https://newton-project-resume-backend.s3.amazonaws.com/thumbnail/64cf94d447ae38c3e33a7103.jpg",
+                "appType": "music",
+                "createdAt": "2023-08-06T12:40:52.125Z",
+                "__v": 0,
+                "audio_url": "https://newton-project-resume-backend.s3.amazonaws.com/audio/64cf94d447ae38c3e33a7103.mp3"
+            }
+        ],
+        "appType": "music",
+        "__v": 17
+    }
+}
