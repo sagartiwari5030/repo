@@ -46,7 +46,7 @@ const ArtistDetails = () => {
   useEffect(() => {
     // Update the document title using the browser API
     GetArtistDetailByIDAPI()
-  }, []);
+  }, [artistId]);
 
 
   return (

@@ -9,6 +9,7 @@ import Updatepass from './pages/UpdatePass';
 import Album from './pages/Album';
 import AlbumDetails from './pages/AlbumDetails'
 import Premium from './pages/Premium';
+import LikedSongs from './pages/LikedSongs';
 
 const App = () => {
   const { activeSong } = useSelector((state) => state.player);
@@ -35,6 +36,7 @@ const App = () => {
               <Route path="/album" element={<Album />} />
               <Route path="/album/:id" element={<AlbumDetails />} />
               <Route path="/premium" element={<Premium/>} />
+              <Route path="/liked-songs" element={<LikedSongs/>} />
             </Routes>
           </div>
           <div className="xl:sticky relative top-0 h-fit">

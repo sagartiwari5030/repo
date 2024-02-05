@@ -42,6 +42,8 @@ const AlbumDetails = () => {
     }
   };
 
+  console.log("Sagar albumId=>", albumId);
+
   useEffect(() => {
     // Update the document title using the browser API
     GetAlbumDetailByIDAPI()

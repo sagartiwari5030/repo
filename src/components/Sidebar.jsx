@@ -14,7 +14,7 @@ const links = [
   { name: 'Album ', to: '/album', icon: HiOutlinePhotograph },
   { name: 'SignUp ', to: '/signup', icon: HiUserAdd  },
   { name: 'Login ', to: '/login', icon: HiOutlineLogin  },
-  { name: 'Liked Song', to: '/around-you', icon: HiHeart },
+  { name: 'Liked Song', to: '/liked-songs', icon: HiHeart },
   { name: 'Premium ', to: '/premium', icon: HiStar  },
  
 ];
