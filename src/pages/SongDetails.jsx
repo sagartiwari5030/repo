@@ -24,6 +24,7 @@ const SongDetails = () => {
   const handlePauseClick = () => {
     dispatch(playPause(false));
   };
+  
 
   const handlePlayClick = (song, i) => {
     dispatch(setActiveSong({ song, data, i }));
