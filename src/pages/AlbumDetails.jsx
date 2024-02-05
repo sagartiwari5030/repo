@@ -1,22 +1,17 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { useSelector } from 'react-redux';
-import { DetailsHeader, Error, Loader, RelatedSongs } from '../components';
-
-import { useGetArtistDetailsQuery } from '../redux/services/shazamCore';
+import {  Error, Loader, RelatedSongs } from '../components';
 import { ArtistCard } from '../components';
+
+
 
 const AlbumDetails = () => {
   const { id: albumId } = useParams();
-  const { activeSong, isPlaying } = useSelector((state) => state.player);
-  //   const { data: artistData, isFetching: isFetchingArtistDetails, error } = useGetArtistDetailsQuery(artistId);
-
-  // if (isFetchingArtistDetails) return <Loader title="Loading artist details..." />;
-
-  // if (error) return <Error />;
-
+  // const { activeSong, isPlaying } = useSelector((state) => state.player);
   const [album, setAlbum] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   const GetAlbumDetailByIDAPI = async () => {
     try {
@@ -35,10 +30,11 @@ const AlbumDetails = () => {
 
 
       // Set loading to false, indicating that the data has been fetched
-      // setLoading(false);
+      setLoading(false);
     } catch (error) {
       console.error('Error fetching data:', error);
-      // setLoading(false);
+       setError(error);
+      setLoading(false);
     }
   };
 
@@ -48,7 +44,13 @@ const AlbumDetails = () => {
     // Update the document title using the browser API
     GetAlbumDetailByIDAPI()
   }, []);
+  if (loading) {
+    return <Loader title="Loading album details..." />;
+  }
 
+  if (error) {
+    return <Error />;
+  }
 
   return (
     <div className="flex flex-col item-center">

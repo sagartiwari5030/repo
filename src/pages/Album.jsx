@@ -1,13 +1,10 @@
 import axios from 'axios';
-import React, { useEffect,useState } from 'react';
-import { ArtistCard, Error, Loader } from '../components';
-import { useGetTopChartsQuery } from '../redux/services/shazamCore';
-import AlbumCard from '../components/AlbumCard';
+import React, { useEffect, useState } from 'react';
+import { AlbumCard, Error, Loader } from '../components';
 
 const Album = () => {
-  // const { data, isFetching, error } = useGetTopChartsQuery();
-  // if (isFetching) return <Loader title="Loading artists..." />;
-  // if (error) return <Error />;
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
   const [albums, setAlbums] = useState([]);
 
   const GetAlbumAPI = async () => {
@@ -18,27 +15,29 @@ const Album = () => {
         "projectId": "f104bi07c490"
       };
 
-      // Make a POST request to your API endpoint
       const response = await axios.get(`${url}/api/v1/music/album`, { headers });
 
-      // Do something with the response
-      console.log("Data received =>",response.data.data[0]);
+      console.log("Data received =>", response.data.data[0]);
       setAlbums(response.data.data);
-
-
-      // Set loading to false, indicating that the data has been fetched
-      // setLoading(false);
+      setLoading(false); // Set loading to false after successful fetch
     } catch (error) {
       console.error('Error fetching data:', error);
-      // setLoading(false);
+      setError(error); // Set the error state in case of an error
+      setLoading(false); // Set loading to false
     }
   };
   
   useEffect(() => {
-    // Update the document title using the browser API
-    GetAlbumAPI()
-  },[]);
+    GetAlbumAPI();
+  }, []);
 
+  if (loading) {
+    return <Loader title="Loading albums..." />;
+  }
+
+  if (error) {
+    return <Error />;
+  }
 
   return (
     <div className="flex flex-col">

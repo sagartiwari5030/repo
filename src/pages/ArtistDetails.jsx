@@ -4,19 +4,13 @@ import { useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { DetailsHeader, Error, Loader, RelatedSongs, SongCard } from '../components';
 
-import { useGetArtistDetailsQuery } from '../redux/services/shazamCore';
-
 const ArtistDetails = () => {
   const { id: artistId } = useParams();
   const { activeSong, isPlaying } = useSelector((state) => state.player);
-  const { data: artistData, isFetching: isFetchingArtistDetails, error } = useGetArtistDetailsQuery(artistId);
-
-  // if (isFetchingArtistDetails) return <Loader title="Loading artist details..." />;
-
-  // if (error) return <Error />;
-
   const [artist, setArtist] = useState([]);
   const [songs, setSongs] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   const GetArtistDetailByIDAPI = async () => {
     try {
@@ -36,10 +30,11 @@ const ArtistDetails = () => {
 
 
       // Set loading to false, indicating that the data has been fetched
-      // setLoading(false);
+      setLoading(false);
     } catch (error) {
       console.error('Error fetching data:', error);
-      // setLoading(false);
+      setError(error);
+      setLoading(false);
     }
   };
 
@@ -48,6 +43,13 @@ const ArtistDetails = () => {
     GetArtistDetailByIDAPI()
   }, [artistId]);
 
+  if (loading) {
+    return <Loader title="Loading albums..." />;
+  }
+
+  if (error) {
+    return <Error />;
+  }
 
   return (
     <div className="flex flex-col">
