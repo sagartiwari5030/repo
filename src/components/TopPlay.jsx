@@ -1,13 +1,11 @@
 /* eslint-disable import/no-unresolved */
 import React, { useEffect, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link,useNavigate,NavLink} from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FreeMode } from 'swiper';
 import axios from 'axios';
 import { FiSearch } from 'react-icons/fi';
-import { useNavigate } from 'react-router-dom';
-import { NavLink } from 'react-router-dom';
 import { HiOutlineHashtag, HiOutlineHome, HiOutlineMenu, HiOutlinePhotograph, HiOutlineUserGroup } from 'react-icons/hi';
 import { RiCloseLine } from 'react-icons/ri';
 import PlayPause from './PlayPause';
@@ -15,6 +13,8 @@ import { playPause, setActiveSong } from '../redux/features/playerSlice';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import { logo } from '../assets';
+import { useUser } from '../contexts/UserProvider';
+
 
 const TopChartCard = ({ song, i, isPlaying, activeSong, handlePauseClick, handlePlayClick }) => (
   <div className={`w-full flex flex-row items-center hover:bg-[#4c426e] ${activeSong?.title === song?.title ? 'bg-[#4c426e]' : 'bg-transparent'} py-2 p-4 rounded-lg cursor-pointer mb-2`}>
@@ -164,6 +164,7 @@ const NavLinks = ({ handleClick }) => (
   </div>
 );
 const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+const { user, signOutUser } = useUser();
 
 
   return (
@@ -180,7 +181,7 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
           autoComplete="off"
           id="search-field"
           className="mt-4  mr-8 w-30 md:w-80 bg-transparent border-2 rounded-full placeholder-gray-500 outline-none text-base text-white p-2 md:p-3 focus:placeholder-transparent"
-          placeholder="Search by value"
+          placeholder="Search by Song Name"
           type="search"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
@@ -208,11 +209,15 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
       Explore Premium
       </button>
       </Link>
-      <Link to="/login">
-      <button className="text-white bg-green-500 px-4 py-2 rounded">
-        Login
-      </button>
-      </Link>
+      <Link to={user ? "#" : "/login"}>
+  <button
+    className={`text-white ${user ? 'bg-red-500' : 'bg-green-500'} px-4 py-2 rounded`}
+    onClick={user ? signOutUser : undefined}
+  >
+    {user ? 'Logout' : 'Login'}
+  </button>
+</Link>
+      
     </div>
        
 {/* Button componenent END */}

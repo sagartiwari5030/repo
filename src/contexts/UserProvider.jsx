@@ -14,15 +14,15 @@ export const UserProvider = ({ children }) => {
         setUser(null);
     }
 
-    const object = {
-        getUser,
-        signInUser,
-        signOutUser
-    }
+    // const object = {
+    //     getUser,
+    //     signInUser,
+    //     signOutUser
+    // }
 
 
     return (<div>
-        <UserContext.Provider value={object}>
+        <UserContext.Provider value={{ getUser, signInUser, signOutUser }}>
             {children}
         </UserContext.Provider>
     </div>)
@@ -30,5 +30,9 @@ export const UserProvider = ({ children }) => {
 }
 
 export function useUser() {
+    const context = useContext(UserContext);
+    if (!context) {
+      throw new Error('useUser must be used within a UserProvider');
+    }
     return useContext(UserContext);
 }
