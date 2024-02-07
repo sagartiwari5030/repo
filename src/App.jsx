@@ -8,7 +8,7 @@ import {
   TopArtists,
   ArtistDetails,
   SongDetails,
-  TopCharts,
+  Tranding,
   AroundYou,
   SignUp,
   Login,
@@ -46,7 +46,7 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Discover />} />
               <Route path="/top-artists" element={<TopArtists />} />
-              <Route path="/top-charts" element={<TopCharts />} />
+              <Route path="/tranding" element={<Tranding />} />
               <Route path="/around-you" element={<AroundYou />} />
               <Route path="/artists/:id" element={<ArtistDetails />} />
               <Route path="/songs/:songid" element={<SongDetails />} />

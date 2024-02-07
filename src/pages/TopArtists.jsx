@@ -1,43 +1,36 @@
-import axios from 'axios';
-import React, { useEffect,useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { ArtistCard, Error, Loader } from '../components';
-import { useGetTopChartsQuery } from '../redux/services/shazamCore';
+import { fetchTopArtists } from '../utils/apiUtils';
 
 const TopArtists = () => {
-  // const { data, isFetching, error } = useGetTopChartsQuery();
-  // if (isFetching) return <Loader title="Loading artists..." />;
-  // if (error) return <Error />;
   const [data, setData] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-  const GetArtistAPI = async () => {
+  const getTopArtists = async () => {
     try {
-      const url = "https://academics.newtonschool.co";
-      const headers = {
-        "Content-Type": "application/json",
-        "projectId": "f104bi07c490"
-      };
-
-      // Make a POST request to your API endpoint
-      const response = await axios.get(`${url}/api/v1/music/artist/`, { headers });
-
-      // Do something with the response
-      console.log("Data received =>",response.data.data[0]);
-      setData(response.data.data);
-
-
-      // Set loading to false, indicating that the data has been fetched
-      // setLoading(false);
+      setIsLoading(true);
+      const topArtists = await fetchTopArtists();
+      setData(topArtists);
     } catch (error) {
-      console.error('Error fetching data:', error);
-      // setLoading(false);
+      console.error('Error fetching top artists:', error);
+      setError(error);
+    } finally {
+      setIsLoading(false);
     }
   };
-  
-  useEffect(() => {
-    // Update the document title using the browser API
-   GetArtistAPI()
-  },[]);
 
+  useEffect(() => {
+    getTopArtists();
+  }, []);
+
+  if (isLoading) {
+    return <Loader title="Loading top artists..." />;
+  }
+
+  if (error) {
+    return <Error />;
+  }
 
   return (
     <div className="flex flex-col">

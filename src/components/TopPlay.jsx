@@ -10,13 +10,8 @@ import { useNavigate } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import { HiOutlineHashtag, HiOutlineHome, HiOutlineMenu, HiOutlinePhotograph, HiOutlineUserGroup } from 'react-icons/hi';
 import { RiCloseLine } from 'react-icons/ri';
-
-
-
 import PlayPause from './PlayPause';
 import { playPause, setActiveSong } from '../redux/features/playerSlice';
-import { useGetTopChartsQuery } from '../redux/services/shazamCore';
-
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import { logo } from '../assets';
@@ -146,7 +141,7 @@ const links = [
   { name: 'Discover', to: '/', icon: HiOutlineHome },
   { name: 'Around You', to: '/around-you', icon: HiOutlinePhotograph },
   { name: 'Top Artists', to: '/top-artists', icon: HiOutlineUserGroup },
-  { name: 'Top Charts', to: '/top-charts', icon: HiOutlineHashtag },
+  { name: 'Tranding', to: '/tranding', icon: HiOutlineHashtag },
   { name: 'SignUp ', to: '/signup', icon: HiOutlineHashtag },
   { name: 'Login ', to: '/login', icon: HiOutlineHashtag },
   { name: 'Updatepass ', to: '/updatepass', icon: HiOutlineHashtag },
@@ -206,13 +201,7 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
         <img src={logo} alt="logo" className="w-full h-14 object-contain" />
         <NavLinks handleClick={() => setMobileMenuOpen(false)} />
       </div>
-
-
-
-
-
-
-
+      {/* Button componenent */}
      <div className="hidden md:flex items-center justify-end p-4">
       <Link to="/premium">
       <button className="text-white bg-red-500 px-4 py-2 rounded mr-2">
@@ -225,7 +214,8 @@ const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
       </button>
       </Link>
     </div>
-     
+       
+{/* Button componenent END */}
      
       <div className="w-full flex flex-col">
         <div className="flex flex-row justify-between items-center">

@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Error, Loader, SongCard } from '../components';
-import { useGetTopChartsQuery } from '../redux/services/shazamCore';
 import axios from 'axios';
 
-const TopCharts = () => {
+const Tranding = () => {
   // const { data, isFetching, error } = useGetTopChartsQuery();
   const { activeSong, isPlaying } = useSelector((state) => state.player);
 
@@ -48,7 +47,7 @@ const TopCharts = () => {
 
   return (
     <div className="flex flex-col">
-      <h2 className="font-bold text-3xl text-white text-left mt-4 mb-10">Discover Top Features</h2>
+      <h2 className="font-bold text-3xl text-white text-left mt-4 mb-10">Discover Top Tranding </h2>
 
       <div className="flex flex-wrap sm:justify-start justify-center gap-8">
         {featureds.map((song, i) => (
@@ -66,4 +65,4 @@ const TopCharts = () => {
   );
 };
 
-export default TopCharts;
+export default Tranding;

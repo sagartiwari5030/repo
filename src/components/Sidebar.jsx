@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { HiHeart  ,HiStar ,HiUserAdd ,HiOutlineLogin , HiMusicNote ,HiOutlineHashtag, HiOutlineHome, HiOutlineMenu, HiOutlinePhotograph, HiOutlineUserGroup } from 'react-icons/hi';
 import { RiCloseLine } from 'react-icons/ri';
-// import {  } from "react-icons/fa6";
 
 
 import { logo } from '../assets';
@@ -11,7 +10,7 @@ import { logo } from '../assets';
 const links = [
   { name: 'Discover', to: '/', icon: HiOutlineHome },
   { name: 'Top Artists', to: '/top-artists', icon: HiOutlineUserGroup },
-  { name: 'Top Feature', to: '/top-charts', icon:HiMusicNote },
+  { name: 'Top Tranding', to: '/Tranding', icon:HiMusicNote },
   { name: 'Album ', to: '/album', icon: HiOutlinePhotograph },
   { name: 'SignUp ', to: '/signup', icon: HiUserAdd  },
   { name: 'Login ', to: '/login', icon: HiOutlineLogin  },

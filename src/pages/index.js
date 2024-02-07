@@ -3,7 +3,7 @@ import TopArtists from './TopArtists';
 import ArtistDetails from './ArtistDetails';
 import SongDetails from './SongDetails';
 import Search from './Search';
-import TopCharts from './TopCharts';
+import Tranding from './Tranding';
 import AroundYou from './AroundYou';
 import SignUp from './SignUp';
 import Login from './Login';
@@ -19,7 +19,7 @@ export {
   TopArtists,
   ArtistDetails,
   SongDetails,
-  TopCharts,
+  Tranding,
   AroundYou,
   SignUp,
   Login,

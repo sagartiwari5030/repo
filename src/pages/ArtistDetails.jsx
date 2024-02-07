@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { DetailsHeader, Error, Loader, RelatedSongs, SongCard } from '../components';
-
 import { useGetArtistDetailsQuery } from '../redux/services/shazamCore';
 
 const ArtistDetails = () => {

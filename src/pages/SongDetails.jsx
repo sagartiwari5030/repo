@@ -4,54 +4,27 @@ import { useSelector, useDispatch } from 'react-redux';
 import { DetailsHeader, Error, Loader, RelatedSongs } from '../components';
 
 import { setActiveSong, playPause } from '../redux/features/playerSlice';
-import { useGetSongDetailsQuery, useGetSongRelatedQuery } from '../redux/services/shazamCore';
-import axios from 'axios';
+import { fetchSongDetails } from '../utils/apiUtils';
 import { FaHeart } from 'react-icons/fa';
+
 const SongDetails = () => {
   const dispatch = useDispatch();
-  const { songid, id: artistId } = useParams();
-  // console.log("songid =>", songid);
+  const { songid } = useParams();
   const { activeSong, isPlaying } = useSelector((state) => state.player);
-
-  // const { data, isFetching: isFetchinRelatedSongs, error } = useGetSongRelatedQuery({ songid });
-  // const { data: songData, isFetching: isFetchingSongDetails } = useGetSongDetailsQuery({ songid });
-
-  // if (isFetchingSongDetails && isFetchinRelatedSongs) return <Loader title="Searching song details" />;
-
-  // console.log(songData);
-
   const [songs, setSongs] = useState([]);
 
-  const GetSongDetailByIDAPI = async () => {
+  const getSongDetails = async () => {
     try {
-      const url = "https://academics.newtonschool.co";
-      const headers = {
-        "Content-Type": "application/json",
-        "projectId": "f104bi07c490"
-      };
-
-      // Make a POST request to your API endpoint
-      const response = await axios.get(`${url}/api/v1/music/song/${songid}`, { headers });
-
-      // Do something with the response
-      console.log("artist Data received =>", response.data.data);
-      setSongs(response.data.data);
-
-
-      // Set loading to false, indicating that the data has been fetched
-      // setLoading(false);
+      const songDetails = await fetchSongDetails(songid);
+      setSongs(songDetails);
     } catch (error) {
-      console.error('Error fetching data:', error);
-      // setLoading(false);
+      console.error('Error fetching song details:', error);
     }
   };
 
   useEffect(() => {
-    // Update the document title using the browser API
-    GetSongDetailByIDAPI()
+    getSongDetails();
   }, []);
-
-  // if (error) return <Error />;
 
   const handlePauseClick = () => {
     dispatch(playPause(false));
@@ -66,12 +39,10 @@ const SongDetails = () => {
 
   const handleLikeClick = () => {
     setClicked((prevClicked) => !prevClicked);
-    // setIsLiked(!isLiked);
   };
 
   return (
     <div className="flex flex-col">
-
       <div className="relative w-full flex flex-col">
         <div className="w-full bg-gradient-to-l from-transparent to-black sm:h-48 h-28" />
 
@@ -99,11 +70,6 @@ const SongDetails = () => {
                 <span>{""}</span>
               </p>
             </div>
-
-            {/* <Link to={`/artists/${songs?.artist[0]?._id}`}>
-              <p className="text-base text-gray-400 mt-2">{songs?.artist[0]?.name}</p>
-            </Link> */}
-
           </div>
         </div>
 
@@ -118,7 +84,6 @@ const SongDetails = () => {
         handlePauseClick={handlePauseClick}
         handlePlayClick={handlePlayClick}
       /> */}
-
     </div>
   );
 };
