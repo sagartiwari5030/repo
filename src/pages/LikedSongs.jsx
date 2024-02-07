@@ -4,6 +4,7 @@ import { ArtistCard, Error, Loader, SongCard } from '../components';
 import { useGetTopChartsQuery } from '../redux/services/shazamCore';
 import AlbumCard from '../components/AlbumCard';
 import { useSelector } from 'react-redux';
+import {useUser} from '../contexts/UserProvider';
 
 const LikedSongs = () => {
   // const { data, isFetching, error } = useGetTopChartsQuery();
@@ -12,6 +13,7 @@ const LikedSongs = () => {
   const [liked, setLiked] = useState([]);
 
   const { activeSong, isPlaying } = useSelector((state) => state.player);
+  const { getUser } = useUser();
 
   const GetLikedSongsAPI = async () => {
     try {
@@ -19,7 +21,7 @@ const LikedSongs = () => {
       const headers = {
         "Content-Type": "application/json",
         "projectId": "f104bi07c490",
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YjdhYzg4MjBkOTk4MTI2ZmI3NDM2YiIsImlhdCI6MTcwNjUzNjA3MywiZXhwIjoxNzM4MDcyMDczfQ.gFhj4OTj4yDn8kjcXekHLZ5JZpvSMMjZyE3k8APfDUQ"
+        "Authorization":`Bearer ${getUser.token}`
       };
 
       // Make a POST request to your API endpoint

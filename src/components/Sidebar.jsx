@@ -6,6 +6,7 @@ import { RiCloseLine } from 'react-icons/ri';
 
 
 import { logo } from '../assets';
+// import { useUser } from '../contexts/UserProvider';
 
 const links = [
   { name: 'Discover', to: '/', icon: HiOutlineHome },
@@ -18,6 +19,8 @@ const links = [
   { name: 'Premium ', to: '/premium', icon: HiStar  },
  
 ];
+
+// const { getUser } = useUser();
 
 const NavLinks = ({ handleClick }) => (
   <div className="mt-10">
@@ -34,6 +37,27 @@ const NavLinks = ({ handleClick }) => (
     ))}
   </div>
 );
+
+
+// const NavLinks = ({ handleClick }) => (
+//   <div className="mt-10">
+//     {links.map((item) => {
+//       getUser.status == "success" &&  item.name == 'Liked Song'? (
+//         <NavLink
+//           key={item.name}
+//           to={item.to}
+//           className="flex flex-row justify-start items-center my-8 text-sm font-medium text-gray-400 hover:text-cyan-400"
+//           onClick={() => handleClick && handleClick()}
+//         >
+//           <item.icon className="w-6 h-6 mr-2" />
+//           {item.name}
+//         </NavLink>
+//       )
+//         : null
+//     })}
+//   </div>
+// );
+
 
 const Sidebar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

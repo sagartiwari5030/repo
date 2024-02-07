@@ -1,18 +1,39 @@
 import { useSelector } from 'react-redux';
-import { Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 
 import { Searchbar, Sidebar, MusicPlayer, TopPlay } from './components';
-import { ArtistDetails, TopArtists, AroundYou, Discover, Search, SongDetails, TopCharts } from './pages';
-import SignUp from './pages/SignUp';
-import Login from './pages/Login';
-import Updatepass from './pages/UpdatePass';
-import Album from './pages/Album';
-import AlbumDetails from './pages/AlbumDetails'
-import Premium from './pages/Premium';
-import LikedSongs from './pages/LikedSongs';
+import {
+  Discover,
+  Search,
+  TopArtists,
+  ArtistDetails,
+  SongDetails,
+  TopCharts,
+  AroundYou,
+  SignUp,
+  Login,
+  Updatepass,
+  Album,
+  AlbumDetails,
+  Premium,
+  LikedSongs
+} from './pages';
+
+import { useUser } from './contexts/UserProvider';
 
 const App = () => {
   const { activeSong } = useSelector((state) => state.player);
+
+  function ProtectedRoute({ children }) {
+    const { getUser } = useUser();
+    if (getUser && getUser.status == "success") {
+      return children;
+    }
+    else {
+      return <Navigate to={"/login"} />
+    }
+  }
+
 
   return (
     <div className="relative flex">
@@ -30,13 +51,21 @@ const App = () => {
               <Route path="/artists/:id" element={<ArtistDetails />} />
               <Route path="/songs/:songid" element={<SongDetails />} />
               <Route path="/search/:searchTerm" element={<Search />} />
-              <Route path="/signup" element={<SignUp />} />
-              <Route path="/login" element={<Login />} />
-              <Route path="/updatepass" element={<Updatepass />} />
               <Route path="/album" element={<Album />} />
               <Route path="/album/:id" element={<AlbumDetails />} />
-              <Route path="/premium" element={<Premium/>} />
-              <Route path="/liked-songs" element={<LikedSongs/>} />
+
+              <Route path="/signup" element={<SignUp />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/premium" element={<Premium />} />
+
+              <Route path="/updatepass" element={<ProtectedRoute>
+                <Updatepass />
+              </ProtectedRoute>} />
+
+              <Route path="/liked-songs" element={<ProtectedRoute>
+                <LikedSongs />
+              </ProtectedRoute>} />
+
             </Routes>
           </div>
           <div className="xl:sticky relative top-0 h-fit">

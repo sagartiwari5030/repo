@@ -6,9 +6,13 @@ import { useState } from 'react';
 
 import PlayPause from './PlayPause';
 import { playPause, setActiveSong } from '../redux/features/playerSlice';
+import axios from 'axios';
+import {useUser} from '../contexts/UserProvider';
 
 const SongCard = ({ song, isPlaying, activeSong, data, i }) => {
   const dispatch = useDispatch();
+
+  const { getUser } = useUser();
 
   const handlePauseClick = () => {
     dispatch(playPause(false));
@@ -20,9 +24,30 @@ const SongCard = ({ song, isPlaying, activeSong, data, i }) => {
   };
   const [clicked, setClicked] = useState(false);
 
-  const handleLikeClick = () => {
-    setClicked((prevClicked) => !prevClicked);
-    // setIsLiked(!isLiked);
+  const handleLikeClick = async(songId) => {
+    try {
+      const url = "https://academics.newtonschool.co";
+      const headers = {
+        "Content-Type": "application/json",
+        "projectId": "f104bi07c490",
+        "Authorization":`Bearer ${getUser.token}`
+      };
+
+      // Make a POST request to your API endpoint
+      const response = await axios.patch(`${url}/api/v1/music/favorites/like`,{ "songId" : songId}, { headers });
+
+      // Do something with the response
+      console.log("Like Data received =>", response.data.data);
+
+      setClicked((prevClicked) => !prevClicked);
+
+
+      // Set loading to false, indicating that the data has been fetched
+      // setLoading(false);
+    } catch (error) {
+      console.error('Error fetching data:', error);
+      // setLoading(false);
+    }
   };
   return (
     <div className="flex flex-col w-[250px] p-4 bg-white/5 bg-opacity-80 backdrop-blur-sm animate-slideup rounded-lg cursor-pointer">
@@ -57,7 +82,7 @@ const SongCard = ({ song, isPlaying, activeSong, data, i }) => {
       </div>
       <div className="absolute bottom-0 right-0 p-4 text-white ">
         <FaHeart   className={`mr-1 inline cursor-pointer ${clicked ? 'text-red-500 text-2xl' : ''}`}
-          onClick={handleLikeClick}/>
+          onClick={()=>handleLikeClick(song?._id)}/>
         <span>{""}</span>
       </div>
     </div>

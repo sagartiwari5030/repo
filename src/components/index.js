@@ -9,8 +9,7 @@ import RelatedSongs from './RelatedSongs';
 import MusicPlayer from './MusicPlayer';
 import Loader from './Loader';
 import Error from './Error';
-import Pagination from './Pagination';
-import AlbumCard from './AlbumCard';
+
 export {
   TopPlay,
   Sidebar,
@@ -23,6 +22,4 @@ export {
   MusicPlayer,
   Loader,
   Error,
-  Pagination,
-  AlbumCard,
 };

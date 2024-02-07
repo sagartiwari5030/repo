@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-import {  Error, Loader } from '../components';
-
+import { useUser } from '../contexts/UserProvider';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+
+  const { signInUser } = useUser();
+  const navigate = useNavigate();
 
   const LoginAPI = async () => {
     try {
@@ -28,24 +29,22 @@ const Login = () => {
 
       // Do something with the response
       console.log(response.data);
-      setLoading(false);
+
+      let result = response.data;
+
+      if (result.status == "success") {
+        localStorage.setItem("token", response.data.token);
+        signInUser({ status: response.data.status, token: response.data.token });
+        navigate('/');
+      }
 
       // Set loading to false, indicating that the data has been fetched
       // setLoading(false);
     } catch (error) {
       console.error('Error fetching data:', error);
-      setError(error);
-      setLoading(false);
+      // setLoading(false);
     }
   };
-
-  // if (loading) {
-  //   return <Loader title="Loading Login details..." />;
-  // }
-
-  // if (error) {
-  //   return <Error />;
-  // }
 
 
 
