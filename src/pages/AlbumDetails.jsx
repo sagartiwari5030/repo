@@ -52,7 +52,7 @@ const AlbumDetails = () => {
         <div className="w-full sm:h-44 h-24" />
       </div>
 
-      <div className="flex flex-wrap sm:justify-start justify-center gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4">
         {album?.artists?.map((artist) => (
           <ArtistCard key={artist._id} track={artist} />
         ))}

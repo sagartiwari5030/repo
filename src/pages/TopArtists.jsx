@@ -54,7 +54,7 @@ const TopArtists = () => {
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [visibleArtists, setVisibleArtists] = useState(4); // Number of initially visible artists
+  const [visibleArtists, setVisibleArtists] = useState(5); // Number of initially visible artists
 
   const getTopArtists = async () => {
     try {
@@ -100,7 +100,7 @@ const TopArtists = () => {
     <div className="flex flex-col">
       <h2 className="font-bold text-3xl text-white text-left mt-4 mb-10">Top artists</h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
         {data?.map((track) => <ArtistCard key={track._id} track={track} />)}
       </div>
       {/* <Link to="/topartists"> */}

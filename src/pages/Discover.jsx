@@ -15,7 +15,7 @@ const Discover = () => {
   const [moodData, setMoodData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [visibleSongs, setVisibleSongs] = useState(12); // Number of initially visible songs
+  const [visibleSongs, setVisibleSongs] = useState(10); // Number of initially visible songs
 
   const fetchSongs = async () => {
     try {
@@ -65,7 +65,7 @@ const Discover = () => {
           </select>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
           {loading && <Loader title="Loading songs..." />}
           {error && <Error />}
           {!loading &&

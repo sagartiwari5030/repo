@@ -9,7 +9,7 @@ const Album = () => {
   const [albums, setAlbums] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [visibleAlbums, setVisibleAlbums] = useState(8); // Number of initially visible albums
+  const [visibleAlbums, setVisibleAlbums] = useState(10); // Number of initially visible albums
    const navigate =useNavigate();
 
   useEffect(() => {
@@ -31,7 +31,7 @@ const Album = () => {
     setLoading(true);
     try {
       // Assuming fetchAlbums supports pagination with offset and limit
-      const additionalAlbums = await fetchAlbums(visibleAlbums, 8);
+      const additionalAlbums = await fetchAlbums(visibleAlbums, 10);
       setAlbums((prevAlbums) => [...prevAlbums, ...additionalAlbums]);
       setVisibleAlbums(40);
       // setVisibleAlbums((prevVisibleAlbums) => prevVisibleAlbums + additionalAlbums.length);
@@ -50,7 +50,7 @@ const Album = () => {
     <div className="flex flex-col ">
       <h2 className="font-bold text-3xl text-white text-left mt-4 mb-10">Top Albums</h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
       {albums.slice(0, visibleAlbums).map((album) => (
           <AlbumCard key={album._id} album={album} />
         ))}

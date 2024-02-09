@@ -41,7 +41,7 @@ const ArtistDetails = () => {
         artistData={artist}
       />
 
-      <div className="flex flex-wrap sm:justify-start justify-center gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
         {songs.map((song, i) => (
           <SongCard
             key={song._id}
