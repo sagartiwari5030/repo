@@ -9,9 +9,12 @@ const headers = {
 
 //Fetch album  API..........
 
-export const fetchAlbums = async () => {
+export const fetchAlbums = async (params,limit = 40) => {
   try {
-    const response = await axios.get(`${API_URL}/api/v1/music/album`, { headers });
+    const params = {
+      limit: limit,
+    };
+    const response = await axios.get(`${API_URL}/api/v1/music/album`, {params, headers });
     return response.data.data;
   } catch (error) {
     console.error('Error fetching albums:', error);
@@ -44,10 +47,11 @@ export const fetchAlbumById = async (albumId) => {
 
 
   // Fetch data for Descover page by MOOD 
-  export const fetchSongsByMood = async (genreId) => {
+  export const fetchSongsByMood = async (genreId,limit = 40) => {
     try {
       const params = {
-        filter: JSON.stringify({ mood: genreId || 'happy' })
+        filter: JSON.stringify({ mood: genreId || 'happy' }),
+        limit:limit
       };
   
       const response = await axios.get(`${API_URL}/api/v1/music/song`, { params, headers });
@@ -106,9 +110,12 @@ export const fetchAlbumById = async (albumId) => {
 
   // fetching Tot Artist by API
   
-export const fetchTopArtists = async () => {
+export const fetchTopArtists = async (limit=40) => {
     try {
-      const response = await axios.get(`${API_URL}/api/v1/music/artist/`, { headers });
+      const params={
+        limit:limit,
+      }
+      const response = await axios.get(`${API_URL}/api/v1/music/artist/`, {params, headers });
       return response.data.data;
     } catch (error) {
       console.error('Error fetching top artists:', error);
@@ -116,3 +123,49 @@ export const fetchTopArtists = async () => {
     }
   };
 
+
+// ArtistDetails API BY ID..........................................
+
+
+// const [artist, setArtist] = useState([]);
+//   const [songs, setSongs] = useState([]);
+
+//   export const getArtistDetailsById = async (artistId) => {
+//     try {
+//       const url = "https://academics.newtonschool.co";
+//       const headers = {
+//         "Content-Type": "application/json",
+//         "projectId": "f104bi07c490"
+//       };
+
+//       // Make a POST request to your API endpoint
+//       const response = await axios.get(`${url}/api/v1/music/artist/${artistId}`, { headers });
+
+//       // Do something with the response
+//       // console.log("artist Data received =>", response.data.data.songs);
+//       setArtist(response.data.data);
+//       setSongs(response.data.data.songs);
+
+
+//       // Set loading to false, indicating that the data has been fetched
+//       // setLoading(false);
+//     } catch (error) {
+//       console.error('Error fetching data:', error);
+//       // setLoading(false);
+//     }
+    
+// //    useEffect(() => {
+// //     // Update the document title using the browser API
+// //     getArtistDetailsById()
+// //     }, [artistId]);
+//   };
+
+export const getArtistDetailsById = async (artistId) => {
+    try {
+      const response = await axios.get(`${API_URL}/api/v1/music/artist/${artistId}`, { headers });
+      return response.data.data;
+    } catch (error) {
+      console.error('Error fetching artist details:', error);
+      throw error;
+    }
+  };

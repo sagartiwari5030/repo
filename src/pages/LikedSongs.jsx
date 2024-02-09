@@ -1,7 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { ArtistCard, Error, Loader, SongCard } from '../components';
-import { useGetTopChartsQuery } from '../redux/services/shazamCore';
 import AlbumCard from '../components/AlbumCard';
 import { useSelector } from 'react-redux';
 import {useUser} from '../contexts/UserProvider';

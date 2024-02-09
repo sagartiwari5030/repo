@@ -75,8 +75,8 @@ const SongDetails = () => {
 
         <div className="w-full sm:h-44 h-24" />
       </div>
-
-      {/* <RelatedSongs
+{/* 
+      <RelatedSongs
         data={data}
         artistId={artistId}
         isPlaying={isPlaying}
