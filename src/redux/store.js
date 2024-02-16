@@ -1,14 +1,14 @@
 // import { configureStore } from '@reduxjs/toolkit';
 
-// import { shazamCoreApi } from './services/shazamCore';
+// import { netwonCoreApi } from './services/netwonCoreApi';
 // import playerReducer from './features/playerSlice';
 
 // export const store = configureStore({
 //   reducer: {
-//     [shazamCoreApi.reducerPath]: shazamCoreApi.reducer,
+//     [netwonCoreApi.reducerPath]: netwonCoreApi.reducer,
 //     player: playerReducer,
 //   },
-//   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(shazamCoreApi.middleware),
+//   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(netwonCoreApi.middleware),
 // });
 
 import { configureStore } from '@reduxjs/toolkit';
